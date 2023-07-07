@@ -51,7 +51,7 @@ h1 {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 112rem;
+    max-width: 70rem;
     margin: 0 auto;
   }
   h1 {
@@ -65,5 +65,17 @@ h1 {
   .card {
     border-radius: 0.8rem;
     overflow: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 92rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 112rem;
   }
 }
