@@ -20,7 +20,89 @@ img {
   max-width: 100%;
 }
 
-h1 {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+#header {
+  background-color: #ffffff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0;
+}
+
+#header h1 {
+  font-weight: 800;
+  font-size: 2.4rem;
+  padding: 1.6rem 0;
+  position: relative;
+  margin-right: 3.2rem;
+}
+
+#header h1::after {
+  content: '';
+  display: block;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background-color: #ff6b6c;
+  position: absolute;
+  bottom: 2.1rem;
+  right: -1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.navbar ul {
+  display: grid;
+  grid-template-columns: 50px 1fr 10fr 1fr;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.navbar ul li {
+  font-weight: 700;
+}
+
+.navbar ul li:first-child {
+  color: #8d8d99;
+}
+
+.navbar input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: 1px solid #ebeaed;
+  background-color: #f5f4f6;
+  color: #170c3a;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.5;
+  background: #eee;
+}
+
+.navbar img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+}
+
+h2 {
   font-size: 2.4rem;
   text-align: center;
   margin: 3.6rem 0;
@@ -54,7 +136,7 @@ h1 {
     max-width: 70rem;
     margin: 0 auto;
   }
-  h1 {
+  h2 {
     text-align: left;
   }
   .card-container {
