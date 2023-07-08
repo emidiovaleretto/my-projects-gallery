@@ -30,26 +30,24 @@ ul {
 }
 
 #header {
-  display: none;
   background-color: #ffffff;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1.6rem 0;
+  gap: 2.4rem;
+  padding: 1rem 2.4rem;
 }
 
-#header h1 {
+.header-container h1 {
   font-weight: 800;
   font-size: 2.4rem;
-  padding: 1.6rem 0;
   position: relative;
-  margin-right: 3.2rem;
 }
 
-#header h1::after {
+.header-container h1::after {
   content: '';
   display: block;
   width: 0.6rem;
@@ -57,21 +55,25 @@ ul {
   border-radius: 50%;
   background-color: #ff6b6c;
   position: absolute;
-  bottom: 2.1rem;
+  bottom: 0.4rem;
   right: -1rem;
 }
 
-.navbar {
+.navbar,
+.navbar ul {
   display: flex;
   align-items: center;
   gap: 5rem;
 }
 
 .navbar ul {
-  display: grid;
-  grid-template-columns: 50px 1fr 10fr 1fr;
-  align-items: center;
-  gap: 2.4rem;
+  display: none;
+}
+
+.navbar,
+.navbar form {
+  display: flex;
+  flex: 1;
 }
 
 .navbar ul li {
@@ -83,7 +85,7 @@ ul {
 }
 
 .navbar input {
-  width: 100%;
+  flex: 1;
   padding: 0.8rem;
   border-radius: 0.6rem;
   border: 1px solid #ebeaed;
@@ -97,10 +99,11 @@ ul {
   background: #eee;
 }
 
-.navbar img {
+.header-container img {
   width: 4.2rem;
   height: 4.2rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 h2 {
@@ -111,6 +114,7 @@ h2 {
 
 .card {
   background-color: #ffffff;
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
 }
 
 .card-description {
@@ -148,6 +152,15 @@ h2 {
   .container {
     max-width: 70rem;
     margin: 0 auto;
+  }
+  .header-container {
+    padding: 1rem 0;
+  }
+  .header-container h1 {
+    margin-right: 3.2rem;
+  }
+  .navbar ul {
+    display: flex;
   }
   h2 {
     text-align: left;
