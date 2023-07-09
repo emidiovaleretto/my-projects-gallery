@@ -141,17 +141,28 @@ h2 {
 .card {
   background-color: #ffffff;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
 }
 
 .card img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.card img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  filter: grayscale(0.5);
 }
 
 .card-description {
   padding: 2.2rem;
   height: auto;
+  background-color: #ffffff;
+  z-index: 1;
+  position: relative;
 }
 
 .card-description h3 {
@@ -167,7 +178,7 @@ h2 {
   margin-bottom: 3.2rem;
 }
 
-.card-description span {
+.card-description a {
   font-weight: 400;
   font-size: 1.2rem;
   background-color: #ff6b6c;
@@ -177,17 +188,17 @@ h2 {
   border-radius: 0.6rem;
 }
 
-.card-description span:hover {
+.card-description a:hover {
   background-color: #e75a5b;
   cursor: pointer;
 }
 
-.card-description span + span {
+.card-description a + a {
   background-color: #f5f5f5;
   color: #202024;
 }
 
-.card-description span + span:hover {
+.card-description a + a:hover {
   background-color: #ebeaed;
 }
 
