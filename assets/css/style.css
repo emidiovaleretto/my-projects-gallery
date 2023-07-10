@@ -234,6 +234,10 @@ h2 {
   background-color: #ebeaed;
 }
 
+.card-links a i {
+  margin-right: 0.4rem;
+}
+
 .footer {
   background-color: #ffffff;
   padding: 1.6rem;
