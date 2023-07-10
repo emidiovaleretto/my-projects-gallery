@@ -175,14 +175,14 @@ h2 {
   --delay: 1.8s;
 }
 
-.card img {
+.card > img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
-.card img:hover {
+.card > img:hover {
   cursor: pointer;
   transform: scale(1.2);
   filter: grayscale(0.5);
@@ -195,6 +195,17 @@ h2 {
   background-color: #ffffff;
   z-index: 1;
   position: relative;
+}
+
+.card-description-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  margin-bottom: 1.2rem;
 }
 
 .card-description h3 {
