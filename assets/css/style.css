@@ -72,14 +72,9 @@ ul {
   display: none;
 }
 
-.navbar,
-.navbar form {
+.navbar {
   display: flex;
   flex: 1;
-}
-
-.navbar form {
-  display: none;
 }
 
 .navbar ul li {
@@ -287,9 +282,6 @@ h2 {
     margin-right: 3.2rem;
   }
   .navbar ul {
-    display: flex;
-  }
-  .navbar form {
     display: flex;
   }
   h2 {
