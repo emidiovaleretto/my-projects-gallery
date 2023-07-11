@@ -132,7 +132,8 @@ h2 {
 .card-container {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
+  gap: 2rem;
+  margin-bottom: 3.2rem;
 }
 
 .card {
@@ -183,7 +184,6 @@ h2 {
 }
 
 .card > img:hover {
-  cursor: pointer;
   transform: scale(1.2);
   filter: grayscale(0.5);
 }
@@ -311,9 +311,8 @@ h2 {
   }
   .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-bottom: 6.4rem;
   }
   .card-links {
     display: flex;
@@ -329,10 +328,16 @@ h2 {
   .container {
     max-width: 92rem;
   }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 112rem;
+  }
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
